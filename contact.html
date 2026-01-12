@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SheLearns</title>
+  <link rel="stylesheet" href="index-style0.css" />
+</head>
+<body>
+  <!-- =========================
+       NAVBAR SECTION
+  ========================== -->
+  <header class="navbar">
+    <h1>SheLearns</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" target="_blank">Courses</a></li>
+        <li><a href="about-us.html" target="_blank">About-us</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================
+       MAIN CONTACT FORM
+  ========================== -->
+  <main>
+    <section>
+      <form action="submit-contact.html" method="get">
+        <h2>Join SheLearns and start your learning journey.</h2>
+
+        <!-- NAME -->
+        <div>
+          <label for="name">NAME</label>
+          <input
+            class="larg-input"
+            type="text"
+            id="name"
+            name="username"
+            placeholder="Type your name"
+            required
+            minlength="3"
+            maxlength="20"
+          />
+        </div>
+
+        <!-- LAST NAME -->
+        <div>
+          <label for="lastname">LAST NAME</label>
+          <input
+            class="larg-input"
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Type your last name"
+            required
+          />
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+          <label for="email">EMAIL ADDRESS</label>
+          <input
+            class="larg-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Type your email address"
+            required
+          />
+        </div>
+
+        <!-- AGE -->
+        <div>
+          <label for="age">AGE</label>
+          <input
+            class="larg-input"
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Write your age"
+          />
+        </div>
+
+        <!-- RADIO BUTTONS -->
+        <div class="inline">
+          <p>Choose a course to start learning</p>
+
+          <label>
+            <input type="radio" name="lesson" value="English" required />
+            📚 English
+          </label>
+
+          <label>
+            <input type="radio" name="lesson" value="Computer" />
+            💻 Computer
+          </label>
+
+          <label>
+            <input type="radio" name="lesson" value="Internet Basics" />
+            🌐 Internet Basics
+          </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div>
+          <label for="text">Any extra request?</label>
+          <textarea
+            name="extraText"
+            id="text"
+            placeholder="Write something..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- SUBMIT & RESET BUTTONS -->
+        <div class="submit">
+          <button type="submit">SUBMIT</button>
+          <button type="reset">RESET</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    2026 SheLearns | Education for Every Girl
+    <pre>
+Developed By Hadia Sheerin Sukhan
+hadiasheerinsukhan03@gmail.com
+    </pre>
+  </footer>
+</body>
+</html>

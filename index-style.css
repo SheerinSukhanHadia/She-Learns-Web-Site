@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: aliceblue;
+  color: #111;
+  font-family: "Inter", sans-serif;
+}
+#logo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* NAV */
+nav ul {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 48px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-size: large;
+  list-style: none;
+  display: flex;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: rgb(22, 151, 194);
+  border-radius: 50px;
+  transform: scale(1.15);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(22, 151, 194);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 0%;
+}
+
+/* class */
+.class {
+  text-align: center;
+  background: linear-gradient(to right, lightblue, pink, lightblue);
+  padding: 50px;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(1, 239, 56, 0.1);
+  margin-top: 30px;
+}
+
+/* Button */
+.button {
+  padding: 10px 30px;
+  border: none;
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+.button:hover {
+  background-color: rgb(22, 151, 194);
+  transform: scale(1.15);
+  color: white;
+}
+
+#why {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(1, 239, 56, 0.1);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.card:hover {
+  background-color: rgb(22, 151, 194);
+  border-radius: 50px;
+  transform: scale(1.15);
+}
+
+#courses {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  background-color: rgb(22 151, 194);
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-top: 20px;
+}
+
+.lessons {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(65, 140, 205);
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: white;
+}
+.lessons:hover {
+  color: whitesmoke;
+  background-color: rgb(75, 101, 125);
+}
+
+.selects {
+  display: flex;
+  min-height: 70vh;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+/* این فقط چیدمان را درست می‌کند */
+.select-left {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 20px;
+  padding-left: 60px;
+}
+
+/* کارت‌های کورس (بدون تغییر) */
+.selected {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.selected:hover {
+  color: whitesmoke;
+  background-color: rgb(75, 101, 125);
+}
+
+/* فقط کارت‌هایی که عکس دارند */
+.select-left > .photo,
+.select-left > .selected:has(img) {
+  width: 350px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* خود تصویر */
+.select-left > .photo img,
+.select-left > .selected img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
